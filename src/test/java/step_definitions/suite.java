@@ -1,12 +1,13 @@
 package step_definitions;
 
 import cucumber.api.java.en.*;
+import modules.Suite;
 
 public class suite {
 
     @Given("^me alo$")
     public void me_alo() throws Throwable {
-        System.out.println("Given line");
+        Suite.Execute("Test my log is working");
     }
 
     @When("^jeva me he kele$")

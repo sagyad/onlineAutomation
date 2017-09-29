@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6870de3-8037-4d26-ae53-4478c4c8305c" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/step_definitions/test.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/resources/features/test.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/features/test.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/step_definitions/test.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/runner_Class/RunWip.class" afterPath="$PROJECT_DIR$/target/test-classes/runner_Class/RunWip.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/step_definitions/suite.class" afterPath="$PROJECT_DIR$/target/test-classes/step_definitions/suite.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/runner_Class/RunWip.java" afterPath="$PROJECT_DIR$/src/test/java/runner_Class/RunWip.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/step_definitions/suite.java" afterPath="$PROJECT_DIR$/src/test/java/step_definitions/suite.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cucumber-html-report/report.js" afterPath="$PROJECT_DIR$/target/cucumber-html-report/report.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -15,39 +24,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="RunSuite.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/runner_Class/RunSuite.java">
+      <file leaf-file-name="BrowserFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/helper/BrowserFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RunWip.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/runner_Class/RunWip.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Log.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/helper/Log.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+            <state relative-caret-position="560">
+              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding>
-                <element signature="e#200#201#0" expanded="true" />
-                <element signature="e#245#246#0" expanded="true" />
-                <element signature="e#304#305#0" expanded="true" />
-                <element signature="e#347#348#0" expanded="true" />
-                <element signature="e#393#394#0" expanded="true" />
-                <element signature="e#426#427#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyStore_SignUp.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/MyStore_SignUp.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="2" lean-forward="true" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SignUp.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/step_definitions/SignUp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/helper/Constants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="5" column="57" lean-forward="false" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -67,6 +83,9 @@
       <find>ju</find>
       <find>cucumber-jvm</find>
     </findStrings>
+    <dirStrings>
+      <dir>C:\Users\syadav12\Documents\GIT_Projects\onlineAutomation\src\main\resources\BrowserDriver</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -91,9 +110,17 @@
         <option value="$PROJECT_DIR$/src/test/java/setp_definitions/runner/RunWip.java" />
         <option value="$PROJECT_DIR$/src/test/java/setp_definitions/RunWip.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/runner_Class/RunSuite.java" />
         <option value="$PROJECT_DIR$/src/test/java/runner_Class/RunWip.java" />
         <option value="$PROJECT_DIR$/src/test/java/helper/Log.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pageObjects/suite.java" />
+        <option value="$PROJECT_DIR$/src/test/java/modules/suite.java" />
+        <option value="$PROJECT_DIR$/src/test/java/runner_Class/RunSuite.java" />
+        <option value="$PROJECT_DIR$/src/test/java/step_definitions/suite.java" />
+        <option value="$PROJECT_DIR$/src/test/java/modules/Suite.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/MyStore_SignUp.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/helper/Constants.java" />
+        <option value="$PROJECT_DIR$/src/test/java/helper/BrowserFactory.java" />
+        <option value="$PROJECT_DIR$/src/test/java/step_definitions/SignUp.java" />
       </list>
     </option>
   </component>
@@ -148,6 +175,12 @@
               <item name="onlineshopping" type="b2602c69:ProjectViewProjectNode" />
               <item name="onlineAutomation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="onlineshopping" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onlineAutomation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -156,6 +189,22 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="onlineshopping" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onlineAutomation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="helper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="onlineshopping" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onlineAutomation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="onlineshopping" type="b2602c69:ProjectViewProjectNode" />
@@ -445,34 +494,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RunSuite - 2017.09.28 at 16h 38m 48s.xml">
-      <configuration name="RunSuite" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RunSuite - 2017.09.29 at 12h 00m 47s.xml">
-      <configuration name="RunSuite" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RunSuite - 2017.09.29 at 12h 00m 55s.xml">
-      <configuration name="RunSuite" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RunSuite - 2017.09.29 at 12h 02m 26s.xml">
-      <configuration name="RunSuite" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RunSuite_(1) - 2017.09.29 at 12h 03m 35s.xml">
-      <configuration name="RunSuite (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RunSuite_(1) - 2017.09.29 at 12h 06m 06s.xml">
-      <configuration name="RunSuite (1)" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RunSuite_(1) - 2017.09.29 at 12h 09m 59s.xml">
       <configuration name="RunSuite (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RunWip - 2017.09.29 at 12h 03m 05s.xml">
-      <configuration name="RunWip" configurationId="JUnit" />
+    <history-entry file="RunSuite_(1) - 2017.09.29 at 12h 41m 24s.xml">
+      <configuration name="RunSuite (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RunWip_(1) - 2017.09.29 at 12h 07m 03s.xml">
-      <configuration name="RunWip (1)" configurationId="JUnit" />
+    <history-entry file="RunSuite_(1) - 2017.09.29 at 12h 41m 52s.xml">
+      <configuration name="RunSuite (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RunSuite_(1) - 2017.09.29 at 12h 43m 12s.xml">
+      <configuration name="RunSuite (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RunSuite_(1) - 2017.09.29 at 12h 43m 29s.xml">
+      <configuration name="RunSuite (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RunSuite_(1) - 2017.09.29 at 14h 02m 48s.xml">
+      <configuration name="RunSuite (1)" configurationId="JUnit" />
     </history-entry>
     <history-entry file="RunWip_(1) - 2017.09.29 at 12h 10m 27s.xml">
+      <configuration name="RunWip (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RunWip_(1) - 2017.09.29 at 15h 12m 08s.xml">
+      <configuration name="RunWip (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RunWip_(1) - 2017.09.29 at 15h 23m 39s.xml">
+      <configuration name="RunWip (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RunWip_(1) - 2017.09.29 at 15h 25m 04s.xml">
       <configuration name="RunWip (1)" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -488,12 +537,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42872807" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31907895" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1796875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.240625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -534,22 +583,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/step_definitions/suite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/suite.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/step_definitions/test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -574,10 +607,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageObjects/suite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/modules/Suite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="45" lean-forward="false" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/helper/Log.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/step_definitions/suite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/suite.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/runner_Class/RunSuite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        <state relative-caret-position="126">
+          <caret line="8" column="38" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -590,17 +667,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/helper/Log.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/helper/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        <state relative-caret-position="105">
+          <caret line="5" column="57" lean-forward="false" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/MyStore_SignUp.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2" lean-forward="true" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/helper/BrowserFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
-            <element signature="e#200#201#0" expanded="true" />
-            <element signature="e#245#246#0" expanded="true" />
-            <element signature="e#304#305#0" expanded="true" />
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#393#394#0" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/step_definitions/SignUp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
