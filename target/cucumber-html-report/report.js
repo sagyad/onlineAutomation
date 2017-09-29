@@ -1,59 +1,59 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("features/suite.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("features/test.feature");
 formatter.feature({
   "line": 1,
-  "name": "The test",
+  "name": "The test WIP tests",
   "description": "",
-  "id": "the-test",
+  "id": "the-test-wip-tests",
   "keyword": "Feature"
 });
 formatter.scenario({
   "line": 4,
   "name": "It works",
   "description": "",
-  "id": "the-test;it-works",
+  "id": "the-test-wip-tests;it-works",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
       "line": 3,
-      "name": "@suite"
+      "name": "@wip"
     }
   ]
 });
 formatter.step({
   "line": 5,
-  "name": "me alo",
+  "name": "I am",
   "keyword": "Given "
 });
 formatter.step({
   "line": 6,
-  "name": "jeva me he kele",
+  "name": "I do",
   "keyword": "When "
 });
 formatter.step({
   "line": 7,
-  "name": "teva mala he milaale",
+  "name": "I get",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "suite.me_alo()"
+  "location": "test.i_am()"
 });
 formatter.result({
-  "duration": 162537596,
+  "duration": 162284983,
   "status": "passed"
 });
 formatter.match({
-  "location": "suite.jeva_me_he_kele()"
+  "location": "test.i_do()"
 });
 formatter.result({
-  "duration": 76529,
+  "duration": 75175,
   "status": "passed"
 });
 formatter.match({
-  "location": "suite.teva_mala_he_milaale()"
+  "location": "test.i_get()"
 });
 formatter.result({
-  "duration": 73820,
+  "duration": 132063,
   "status": "passed"
 });
 });

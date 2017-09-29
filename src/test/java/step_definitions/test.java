@@ -1,4 +1,4 @@
-package setp_definitions;
+package step_definitions;
 import cucumber.api.java.en.*;
 
 

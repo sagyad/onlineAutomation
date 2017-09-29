@@ -1,4 +1,4 @@
-Feature: The test
+Feature: The test SUITE
 
   @suite
   Scenario: It works
