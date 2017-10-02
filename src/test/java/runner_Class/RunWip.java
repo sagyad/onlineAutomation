@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         features = "classpath:features",
         glue = {"step_definitions"},
         plugin = {"pretty","html:target/cucumber-html-report"},
-        tags = {"@wip","~@suite"}
+        tags = {"@wip","~@LandingPage_StepDef"}
 
 )
 public class RunWip {

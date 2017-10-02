@@ -1,59 +1,51 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("features/test.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("features/LandingPage.feature");
 formatter.feature({
   "line": 1,
-  "name": "The test WIP tests",
+  "name": "I should be able to sign up",
   "description": "",
-  "id": "the-test-wip-tests",
+  "id": "i-should-be-able-to-sign-up",
   "keyword": "Feature"
+});
+formatter.before({
+  "duration": 11430535643,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 4,
-  "name": "It works",
+  "name": "Verify My Store landing Page",
   "description": "",
-  "id": "the-test-wip-tests;it-works",
+  "id": "i-should-be-able-to-sign-up;verify-my-store-landing-page",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
       "line": 3,
-      "name": "@wip"
+      "name": "@suite"
     }
   ]
 });
 formatter.step({
   "line": 5,
-  "name": "I am",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 6,
-  "name": "I do",
+  "name": "I go to Mystore site",
   "keyword": "When "
 });
 formatter.step({
-  "line": 7,
-  "name": "I get",
+  "line": 6,
+  "name": "I Your Logo a new experience text",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "test.i_am()"
+  "location": "LandingPage_StepDef.i_go_to_Mystore_site()"
 });
 formatter.result({
-  "duration": 162284983,
+  "duration": 166769044,
   "status": "passed"
 });
 formatter.match({
-  "location": "test.i_do()"
+  "location": "LandingPage_StepDef.i_Your_Logo_a_new_experience_text()"
 });
 formatter.result({
-  "duration": 75175,
-  "status": "passed"
-});
-formatter.match({
-  "location": "test.i_get()"
-});
-formatter.result({
-  "duration": 132063,
+  "duration": 58510202,
   "status": "passed"
 });
 });
