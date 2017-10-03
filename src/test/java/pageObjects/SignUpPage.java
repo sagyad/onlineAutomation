@@ -10,7 +10,6 @@ public class SignUpPage extends BaseClass {
         super(driver);
     }
 
-
     @FindBy(xpath = ".//a[@class='login']")
     public static WebElement login_link;
 

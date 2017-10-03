@@ -9,7 +9,7 @@ public class AutomationHomePage extends BaseClass {
 
     public AutomationHomePage(WebDriver driver){
         super(driver);
-        PageFactory.initElements(driver,this);
+//        PageFactory.initElements(driver,this);
     }
 
     @FindBy(xpath = ".//a[contains(text(),'Sign in')]")
@@ -20,7 +20,7 @@ public class AutomationHomePage extends BaseClass {
 
 
     //We will use this boolean for assertion. To check if page is opened.
-    public static boolean isPageOpen(){
+    public  boolean isPageOpen(){
         return landingpage_logo.isDisplayed();
     }
 
@@ -28,5 +28,4 @@ public class AutomationHomePage extends BaseClass {
     public  boolean loginSignIsDisplayed(){
         return sign_in.getText().toString().contains("Sign in");
     }
-
 }
