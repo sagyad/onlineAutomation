@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 11430535643,
+  "duration": 13979411648,
   "status": "passed"
 });
 formatter.scenario({
@@ -38,14 +38,14 @@ formatter.match({
   "location": "LandingPage_StepDef.i_go_to_Mystore_site()"
 });
 formatter.result({
-  "duration": 166769044,
+  "duration": 208847168,
   "status": "passed"
 });
 formatter.match({
   "location": "LandingPage_StepDef.i_Your_Logo_a_new_experience_text()"
 });
 formatter.result({
-  "duration": 58510202,
+  "duration": 61827366,
   "status": "passed"
 });
 });
