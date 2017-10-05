@@ -5,11 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class AutomationHomePage extends BaseClass {
+public class HomePage extends BaseClass {
 
-    public AutomationHomePage(WebDriver driver){
+    public HomePage(WebDriver driver){
         super(driver);
-//        PageFactory.initElements(driver,this);
     }
 
     @FindBy(xpath = ".//a[contains(text(),'Sign in')]")

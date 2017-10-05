@@ -1,5 +1,6 @@
 package pageObjects;
 
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,7 +12,7 @@ public class SignUpPage extends BaseClass {
     }
 
     @FindBy(xpath = ".//a[@class='login']")
-    public static WebElement login_link;
+    public static WebElement sign_in_link;
 
     @FindBy(xpath = ".//input[@id='email_create']")
     public static WebElement create_an_account_email;
@@ -19,17 +20,23 @@ public class SignUpPage extends BaseClass {
     @FindBy(xpath = ".//button[@id='SubmitCreate'][1]/span")
     public static WebElement submitbutton;
 
+    @FindBy(xpath = ".//h3[contains(text(),'Create an account')]")
+    public static WebElement create_An_Account_Text;
 
     public static void click_On_Sign_Up_Link(){
-        login_link.click();
+        sign_in_link.click();
     }
 
     public static void enter_Email_Address(){
-        create_an_account_email.sendKeys("student1@mailinator.com");
+        create_an_account_email.sendKeys("test1@Test.com");
     }
 
-    public static void click_On_Create_An_Account_Button(){
+    public static void click_On_Create_An_Account_Button(String createAnAccountButton){
         submitbutton.click();
+    }
+
+    public static void checkCreateAccountPage(){
+        create_An_Account_Text.getText().contains("Create an account");
     }
 
 }
