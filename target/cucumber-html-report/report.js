@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 8672996005,
+  "duration": 10659977258,
   "status": "passed"
 });
 formatter.background({
@@ -26,7 +26,7 @@ formatter.match({
   "location": "HomePage_StepDef.i_go_to_Mystore_site()"
 });
 formatter.result({
-  "duration": 5995148193,
+  "duration": 8314664529,
   "status": "passed"
 });
 formatter.scenario({
@@ -52,15 +52,15 @@ formatter.match({
   "location": "HomePage_StepDef.i_should_get_Your_Logo_a_new_experience_image()"
 });
 formatter.result({
-  "duration": 246508277,
+  "duration": 297429233,
   "status": "passed"
 });
 formatter.after({
-  "duration": 127323,
+  "duration": 174053,
   "status": "passed"
 });
 formatter.before({
-  "duration": 111746,
+  "duration": 84656,
   "status": "passed"
 });
 formatter.background({
@@ -79,7 +79,7 @@ formatter.match({
   "location": "HomePage_StepDef.i_go_to_Mystore_site()"
 });
 formatter.result({
-  "duration": 2390407318,
+  "duration": 2100178590,
   "status": "passed"
 });
 formatter.scenario({
@@ -120,14 +120,14 @@ formatter.match({
   "location": "SignUp_StepDef.i_click_on_Sign_Up()"
 });
 formatter.result({
-  "duration": 1633177182,
+  "duration": 1550596893,
   "status": "passed"
 });
 formatter.match({
   "location": "SignUp_StepDef.i_enter_my_email_address_under_create_an_account_section()"
 });
 formatter.result({
-  "duration": 588838404,
+  "duration": 450584905,
   "status": "passed"
 });
 formatter.match({
@@ -140,18 +140,89 @@ formatter.match({
   "location": "SignUp_StepDef.i_Click_on(String)"
 });
 formatter.result({
-  "duration": 315964168,
+  "duration": 328124841,
   "status": "passed"
 });
 formatter.match({
   "location": "SignUp_StepDef.i_should_be_presented_with_Create_an_account_form()"
 });
 formatter.result({
-  "duration": 131987595,
+  "duration": 135889224,
   "status": "passed"
 });
 formatter.after({
-  "duration": 31831,
+  "duration": 29121,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 108360,
+  "status": "passed"
+});
+formatter.background({
+  "line": 4,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.step({
+  "line": 5,
+  "name": "I go to Mystore site",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "HomePage_StepDef.i_go_to_Mystore_site()"
+});
+formatter.result({
+  "duration": 1840255377,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 19,
+  "name": "Go back go home page",
+  "description": "",
+  "id": "i-should-be-able-to-sign-up;go-back-go-home-page",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 18,
+      "name": "@suite"
+    }
+  ]
+});
+formatter.step({
+  "line": 20,
+  "name": "I click on Logo",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 21,
+  "name": "I should get \"My Store\" title",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "HomePage_StepDef.i_click_on_Logo()"
+});
+formatter.result({
+  "duration": 2266632714,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "My Store",
+      "offset": 14
+    }
+  ],
+  "location": "HomePage_StepDef.i_should_get_title(String)"
+});
+formatter.result({
+  "duration": 3450581,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 30476,
   "status": "passed"
 });
 });
