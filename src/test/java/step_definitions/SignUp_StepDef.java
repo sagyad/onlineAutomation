@@ -12,14 +12,12 @@ import pageObjects.SignUpPage;
 public class SignUp_StepDef {
 
     public WebDriver driver;
-    SignUpPage  signUpPage;
+    SignUpPage signUpPage;
 
 
-
-    public SignUp_StepDef(){
+    public SignUp_StepDef() {
         driver = Hooks.driver;
-        PageFactory.initElements(driver,SignUpPage.class);
-         signUpPage  = new SignUpPage(driver);
+        signUpPage = new SignUpPage(driver);
     }
 
 

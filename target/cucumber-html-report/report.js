@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 10659977258,
+  "duration": 6439489545,
   "status": "passed"
 });
 formatter.background({
@@ -26,7 +26,7 @@ formatter.match({
   "location": "HomePage_StepDef.i_go_to_Mystore_site()"
 });
 formatter.result({
-  "duration": 8314664529,
+  "duration": 3766028947,
   "status": "passed"
 });
 formatter.scenario({
@@ -52,26 +52,34 @@ formatter.match({
   "location": "HomePage_StepDef.i_should_get_Your_Logo_a_new_experience_image()"
 });
 formatter.result({
-  "duration": 297429233,
+  "duration": 162289722,
   "status": "passed"
 });
 formatter.after({
-  "duration": 174053,
+  "duration": 82624,
   "status": "passed"
 });
+formatter.uri("features/SignUp.feature");
+formatter.feature({
+  "line": 1,
+  "name": "As a user, I should be able to Sign Up to mystore.com and create my account",
+  "description": "",
+  "id": "as-a-user,-i-should-be-able-to-sign-up-to-mystore.com-and-create-my-account",
+  "keyword": "Feature"
+});
 formatter.before({
-  "duration": 84656,
+  "duration": 56889,
   "status": "passed"
 });
 formatter.background({
-  "line": 4,
+  "line": 3,
   "name": "",
   "description": "",
   "type": "background",
   "keyword": "Background"
 });
 formatter.step({
-  "line": 5,
+  "line": 4,
   "name": "I go to Mystore site",
   "keyword": "Given "
 });
@@ -79,40 +87,40 @@ formatter.match({
   "location": "HomePage_StepDef.i_go_to_Mystore_site()"
 });
 formatter.result({
-  "duration": 2100178590,
+  "duration": 1504731597,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 12,
+  "line": 7,
   "name": "New user sign Up",
   "description": "",
-  "id": "i-should-be-able-to-sign-up;new-user-sign-up",
+  "id": "as-a-user,-i-should-be-able-to-sign-up-to-mystore.com-and-create-my-account;new-user-sign-up",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 11,
+      "line": 6,
       "name": "@suite"
     }
   ]
 });
 formatter.step({
-  "line": 13,
+  "line": 8,
   "name": "I click on Sign Up",
   "keyword": "And "
 });
 formatter.step({
-  "line": 14,
+  "line": 9,
   "name": "I enter my email address under create an account section",
   "keyword": "And "
 });
 formatter.step({
-  "line": 15,
+  "line": 10,
   "name": "I Click on \"Create an account\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 16,
+  "line": 11,
   "name": "I should be presented with Create an account form",
   "keyword": "Then "
 });
@@ -120,14 +128,14 @@ formatter.match({
   "location": "SignUp_StepDef.i_click_on_Sign_Up()"
 });
 formatter.result({
-  "duration": 1550596893,
+  "duration": 1418097975,
   "status": "passed"
 });
 formatter.match({
   "location": "SignUp_StepDef.i_enter_my_email_address_under_create_an_account_section()"
 });
 formatter.result({
-  "duration": 450584905,
+  "duration": 284417258,
   "status": "passed"
 });
 formatter.match({
@@ -140,89 +148,18 @@ formatter.match({
   "location": "SignUp_StepDef.i_Click_on(String)"
 });
 formatter.result({
-  "duration": 328124841,
+  "duration": 192576950,
   "status": "passed"
 });
 formatter.match({
   "location": "SignUp_StepDef.i_should_be_presented_with_Create_an_account_form()"
 });
 formatter.result({
-  "duration": 135889224,
+  "duration": 68246325,
   "status": "passed"
 });
 formatter.after({
-  "duration": 29121,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 108360,
-  "status": "passed"
-});
-formatter.background({
-  "line": 4,
-  "name": "",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 5,
-  "name": "I go to Mystore site",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "HomePage_StepDef.i_go_to_Mystore_site()"
-});
-formatter.result({
-  "duration": 1840255377,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 19,
-  "name": "Go back go home page",
-  "description": "",
-  "id": "i-should-be-able-to-sign-up;go-back-go-home-page",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 18,
-      "name": "@suite"
-    }
-  ]
-});
-formatter.step({
-  "line": 20,
-  "name": "I click on Logo",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 21,
-  "name": "I should get \"My Store\" title",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "HomePage_StepDef.i_click_on_Logo()"
-});
-formatter.result({
-  "duration": 2266632714,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "My Store",
-      "offset": 14
-    }
-  ],
-  "location": "HomePage_StepDef.i_should_get_title(String)"
-});
-formatter.result({
-  "duration": 3450581,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 30476,
+  "duration": 25736,
   "status": "passed"
 });
 });

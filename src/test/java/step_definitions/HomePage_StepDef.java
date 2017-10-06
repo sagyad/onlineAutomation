@@ -17,12 +17,12 @@ public class HomePage_StepDef {
     HomePage homePage;
 
 
-    public HomePage_StepDef(){
+    public HomePage_StepDef() {
         driver = Hooks.driver;
-        PageFactory.initElements(driver,HomePage.class);
         homePage = new HomePage(driver);
     }
 
+    //***********************************||||||---START----|||||||||*****************************************
     // Scenario: Verify My Store landing Page
     @When("^I go to Mystore site$")
     public void i_go_to_Mystore_site() throws Throwable {
@@ -34,7 +34,9 @@ public class HomePage_StepDef {
         homePage.isPageOpen();
         homePage.loginSignIsDisplayed();
     }
+    //------------------------------------||||--END--|||------------------------------------------------------
 
+    //***********************************|||||||START||||||||||*****************************************
     // Scenario: Go back go home page
     @When("^I click on Logo$")
     public void i_click_on_Logo() throws Throwable {
@@ -43,6 +45,10 @@ public class HomePage_StepDef {
 
     @Then("^I should get \"(.*?)\" title$")
     public void i_should_get_title(String pageTitle) throws Throwable {
-        Assert.assertTrue(pageTitle,true);
+        Assert.assertTrue(pageTitle, true);
     }
+    //------------------------------------||||--END--|||------------------------------------------------------
+
+    //***********************************|||||||START||||||||||*****************************************
+    // New scenario step definitions
 }
