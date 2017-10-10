@@ -13,7 +13,7 @@ import pageObjects.HomePage;
 
 public class HomePage_StepDef {
 
-    public WebDriver driver;
+    public WebDriver driver ;
     HomePage homePage;
 
 

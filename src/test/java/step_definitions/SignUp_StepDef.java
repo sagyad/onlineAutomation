@@ -7,16 +7,19 @@ import helper.BrowserFactory;
 import helper.Constants;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
+import pageObjects.HomePage;
 import pageObjects.SignUpPage;
 
 public class SignUp_StepDef {
 
     public WebDriver driver;
     SignUpPage signUpPage;
+    HomePage homePage;
 
 
-    public SignUp_StepDef() {
+    public SignUp_StepDef() throws Exception {
         driver = Hooks.driver;
+        homePage = new HomePage(driver);
         signUpPage = new SignUpPage(driver);
     }
 

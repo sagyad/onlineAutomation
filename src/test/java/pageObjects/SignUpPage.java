@@ -17,11 +17,25 @@ public class SignUpPage extends BaseClass {
     @FindBy(xpath = ".//input[@id='email_create']")
     public static WebElement create_an_account_email;
 
+    @FindBy(xpath = ".//input[@id='email']")
+    public static WebElement inputLoginEmail;
+
+    @FindBy(xpath = ".//input[@id='passwd']")
+    public static WebElement inputPasswrd;
+
+    @FindBy(xpath = ".//button[@id='SubmitLogin']")
+    public static WebElement clickOnSignInButton;
+
+    @FindBy(xpath = ".//a[@class='logout']")
+    public static WebElement logout;
+
     @FindBy(xpath = ".//button[@id='SubmitCreate'][1]/span")
     public static WebElement submitbutton;
 
     @FindBy(xpath = ".//h3[contains(text(),'Create an account')]")
     public static WebElement create_An_Account_Text;
+
+    //-----------------methods----------------------------------------
 
     public static void click_On_Sign_Up_Link(){
         sign_in_link.click();

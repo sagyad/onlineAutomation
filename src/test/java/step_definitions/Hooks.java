@@ -1,10 +1,11 @@
 package step_definitions;
 
+
 import cucumber.api.Scenario;
-import cucumber.api.java.After;
 import cucumber.api.java.Before;
+import cucumber.api.java.After;
 import helper.BrowserFactory;
-import org.junit.BeforeClass;
+
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -21,27 +22,29 @@ public class Hooks {
     * Delete all cookies at the start of the each scenario to avoid
     * shared state between tests
     */
-    public void openBrowser() throws MalformedURLException{
+    public void openBrowser() throws MalformedURLException {
+        System.out.println("Before - opening new browser");
         System.out.println("Called openBrowser");
         driver = BrowserFactory.getBrowser("Chrome");
-//        driver.manage().deleteAllCookies();
+        driver.manage().deleteAllCookies();
     }
-
 
     @After
     /*
     * Embed a screenshot in test report if test is marked as failed
     */
-    public void embedScreenShot(Scenario scenario){
-        if(scenario.isFailed()){
-            try{
-                scenario.write("Current Page URL is " +driver.getCurrentUrl());
-                byte[] screenShot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
-                scenario.embed(screenShot,"image/jpg");
-            }catch(WebDriverException somePlantformDontSupportScreenShots){
+    public void embedScreenShot(Scenario scenario) {
+        if (scenario.isFailed()) {
+            try {
+                scenario.write("Current Page URL is " + driver.getCurrentUrl());
+                byte[] screenShot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+                scenario.embed(screenShot, "image/jpg");
+            } catch (WebDriverException somePlantformDontSupportScreenShots) {
                 System.err.println(somePlantformDontSupportScreenShots.getMessage());
             }
         }
-//        driver.quit();
+        driver.close();
+        driver.quit();
+            System.out.println("After Hook");
     }
 }

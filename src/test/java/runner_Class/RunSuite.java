@@ -8,6 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "classpath:features",
         glue = {"step_definitions"},
+//        monochrome = true,
         plugin = {"pretty","html:target/cucumber-html-report"},
         tags = {"@suite","~@wip"}
 

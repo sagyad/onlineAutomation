@@ -14,7 +14,7 @@ public class BrowserFactory {
 
     public static WebDriver getBrowser(String browser){
 
-        if(driver!=null)return driver;
+//        if(driver!=null)return driver;
 
         if(browser.equalsIgnoreCase("chrome")){
 //            System.setProperty("webdriver.chrome.driver","classpath:BrowserDriver"+ File.separator+"chromedriver.exe");
