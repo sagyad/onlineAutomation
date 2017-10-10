@@ -1,7 +1,9 @@
 package runner_Class;
 
-//import com.cucumber.listener.ExtentProperties;
-//import com.cucumber.listener.Reporter;
+import com.cucumber.listener.ExtentProperties;
+import com.cucumber.listener.Reporter;
+import com.cucumber.listener.ExtentCucumberFormatter;
+import com.cucumber.listener.ExtentProperties;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 import org.junit.AfterClass;
@@ -15,9 +17,12 @@ import java.io.File;
 @CucumberOptions(
         features = "classpath:features",
         glue = {"step_definitions"},
-        plugin = {"pretty","html:target/cucumber-html-report"},
-
-//        plugin = {"com.cucumber.listener.ExtentCucumberFormatter:Output/report.html"},
+        plugin = {"pretty:STDOUT","html:Reports\\cucumber-pretty",
+        "json:Reports\\cucumber-json\\cucumber.json",
+        "com.cucumber.listener.ExtentCucumberFormatter:Reports\\cucumber-extent\\report.html"},
+        plugin ={"pretty","Reports\\cucumber-pretty"
+                "json:Reports\\cucumer-json"
+                "com.cucumber.listener.ExtentCucumberFormatter"},
         tags = {"@wip","~@suite"}
 
 )
@@ -33,7 +38,7 @@ public class RunWip {
 //
 //    @AfterClass
 //    public static void tearDown(){
-//        Reporter.loadXMLConfig(new File("src\\test\\resources\\extent-config.xml"));
+//        Reporter.loadXMLConfig(new File("src\\main\\resources\\ExtendReport\\extent-config.xml"));
 //        Reporter.setSystemInfo("user", System.getProperty("user.name"));
 //        Reporter.setSystemInfo("os","Windows10");
 //        Reporter.setTestRunnerOutput("Sample test runner output message");

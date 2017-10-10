@@ -13,7 +13,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 14961045346,
+  "duration": 5350824855,
   "status": "passed"
 });
 formatter.scenario({
@@ -43,20 +43,7 @@ formatter.match({
   "location": "LoginLogout_StepDef.i_go_to_site()"
 });
 formatter.result({
-  "duration": 8086293643,
+  "duration": 3954060884,
   "status": "passed"
 });
-formatter.match({
-  "location": "LoginLogout_StepDef.i_login()"
-});
-formatter.result({
-  "duration": 6665524600,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginLogout_StepDef.i_should_logout()"
-});
-formatter.result({
-  "duration": 2128442878,
-  "status": "passed"
 });

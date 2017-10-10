@@ -1,0 +1,7 @@
+@wip
+Feature: I should be able to login and log out from site
+
+  Scenario: Login and Login [90m# features/LoginLogout.feature:4[0m
+    [32mGiven [0m[32mI go to site[0m      [90m# LoginLogout_StepDef.i_go_to_site()[0m
+    [36mWhen [0m[36mI login[0m
+    [36mThen [0m[36mI should logout[0m
