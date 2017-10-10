@@ -20,9 +20,6 @@ import java.io.File;
         plugin = {"pretty:STDOUT","html:Reports\\cucumber-pretty",
         "json:Reports\\cucumber-json\\cucumber.json",
         "com.cucumber.listener.ExtentCucumberFormatter:Reports\\cucumber-extent\\report.html"},
-        plugin ={"pretty","Reports\\cucumber-pretty"
-                "json:Reports\\cucumer-json"
-                "com.cucumber.listener.ExtentCucumberFormatter"},
         tags = {"@wip","~@suite"}
 
 )
