@@ -3,5 +3,12 @@ Feature: I should be able to login and log out from site
 
   Scenario: Login and Login [90m# features/LoginLogout.feature:4[0m
     [32mGiven [0m[32mI go to site[0m      [90m# LoginLogout_StepDef.i_go_to_site()[0m
-    [36mWhen [0m[36mI login[0m
-    [36mThen [0m[36mI should logout[0m
+    [32mWhen [0m[32mI login[0m            [90m# LoginLogout_StepDef.i_login()[0m
+    [32mThen [0m[32mI should logout[0m    [90m# LoginLogout_StepDef.i_should_logout()[0m
+
+  Scenario: Go back go home page       [90m# features/LoginLogout.feature:9[0m
+    [32mGiven [0m[32mI go to site[0m                 [90m# LoginLogout_StepDef.i_go_to_site()[0m
+    [32mAnd [0m[32mI login[0m                        [90m# LoginLogout_StepDef.i_login()[0m
+    [32mAnd [0m[32mI should logout[0m                [90m# LoginLogout_StepDef.i_should_logout()[0m
+    [32mWhen [0m[32mI click on Logo[0m               [90m# HomePage_StepDef.i_click_on_Logo()[0m
+    [32mThen [0m[32mI should get "[0m[32m[1mMy Store[0m[32m" title[0m [90m# HomePage_StepDef.i_should_get_title(String)[0m

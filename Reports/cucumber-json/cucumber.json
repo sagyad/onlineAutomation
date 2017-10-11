@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 5350824855,
+              "duration": 5791211076,
               "status": "passed"
             },
             "match": {
@@ -18,12 +18,23 @@
         "name": "Login and Login",
         "description": "",
         "id": "i-should-be-able-to-login-and-log-out-from-site;login-and-login",
+        "after": [
+          {
+            "result": {
+              "duration": 1558434012,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenShot(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 3954060884,
+              "duration": 3730369107,
               "status": "passed"
             },
             "line": 5,
@@ -34,13 +45,125 @@
             "keyword": "Given "
           },
           {
+            "result": {
+              "duration": 3991152427,
+              "status": "passed"
+            },
             "line": 6,
             "name": "I login",
+            "match": {
+              "location": "LoginLogout_StepDef.i_login()"
+            },
             "keyword": "When "
           },
           {
+            "result": {
+              "duration": 2267146069,
+              "status": "passed"
+            },
             "line": 7,
             "name": "I should logout",
+            "match": {
+              "location": "LoginLogout_StepDef.i_should_logout()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4387929266,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Go back go home page",
+        "description": "",
+        "id": "i-should-be-able-to-login-and-log-out-from-site;go-back-go-home-page",
+        "after": [
+          {
+            "result": {
+              "duration": 1517033814,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenShot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3723907480,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I go to site",
+            "match": {
+              "location": "LoginLogout_StepDef.i_go_to_site()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4049925401,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I login",
+            "match": {
+              "location": "LoginLogout_StepDef.i_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2348353575,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I should logout",
+            "match": {
+              "location": "LoginLogout_StepDef.i_should_logout()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1982363096,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click on Logo",
+            "match": {
+              "location": "HomePage_StepDef.i_click_on_Logo()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3607703,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I should get \"My Store\" title",
+            "match": {
+              "arguments": [
+                {
+                  "val": "My Store",
+                  "offset": 14
+                }
+              ],
+              "location": "HomePage_StepDef.i_should_get_title(String)"
+            },
             "keyword": "Then "
           }
         ]

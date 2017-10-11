@@ -18,8 +18,8 @@ import java.io.File;
         features = "classpath:features",
         glue = {"step_definitions"},
         plugin = {"pretty:STDOUT","html:Reports\\cucumber-pretty",
-        "json:Reports\\cucumber-json\\cucumber.json",
-        "com.cucumber.listener.ExtentCucumberFormatter:Reports\\cucumber-extent\\report.html"},
+        "json:Reports\\cucumber-json\\cucumber.json"},
+//        "com.cucumber.listener.ExtentCucumberFormatter:Reports\\cucumber-extent\\report.html"},
         tags = {"@wip","~@suite"}
 
 )

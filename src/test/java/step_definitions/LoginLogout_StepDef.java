@@ -1,5 +1,6 @@
 package step_definitions;
 
+import Library.Utility;
 import cucumber.api.java.en.*;
 import helper.Constants;
 import modules.LoginAction;
@@ -25,11 +26,13 @@ public class LoginLogout_StepDef {
     @When("^I login$")
     public void i_login() throws Throwable {
         LoginAction.Execute(driver);
+        Utility.captureScreenShot(driver);
     }
 
     @Then("^I should logout$")
     public void i_should_logout() throws Throwable {
         LogoutAction.Execute(driver);
+        Utility.captureScreenShot(driver);
     }
 
 }
