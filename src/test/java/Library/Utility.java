@@ -4,7 +4,6 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebDriverException;
 
 import java.io.File;
 
@@ -14,10 +13,21 @@ public class Utility {
         try {
             TakesScreenshot ts = (TakesScreenshot) driver;
             File source = ts.getScreenshotAs(OutputType.FILE);
-            FileUtils.copyFile(source, new File("./ScreenShots/"+screenShotName+"test.png"));
-            System.out.println("ScreenShot taken");
+            FileUtils.copyFile(source, new File("./ScreenShots/" + screenShotName + "test.png"));
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+
+    public static String captureSS(WebDriver driver, String screenShotName) {
+        try {
+            TakesScreenshot ts = (TakesScreenshot) driver;
+            File source = ts.getScreenshotAs(OutputType.FILE);
+            FileUtils.copyFile(source, new File("./ScreenShots/" + screenShotName + "test.png"));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return screenShotName;
     }
 }

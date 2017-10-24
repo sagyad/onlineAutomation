@@ -1,6 +1,7 @@
 @wip
 Feature: I should be able to login and log out from site
 
+
   Scenario: Login and Login
     Given I go to site
     When I login

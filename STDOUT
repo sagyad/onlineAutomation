@@ -1,14 +1,96 @@
 @wip
-Feature: I should be able to login and log out from site
+Feature: Verify MyStore Home page and return back to home page by clicking on Logo.
 
-  Scenario: Login and Login [90m# features/LoginLogout.feature:4[0m
-    [32mGiven [0m[32mI go to site[0m      [90m# LoginLogout_StepDef.i_go_to_site()[0m
-    [32mWhen [0m[32mI login[0m            [90m# LoginLogout_StepDef.i_login()[0m
-    [32mThen [0m[32mI should logout[0m    [90m# LoginLogout_StepDef.i_should_logout()[0m
+  Background: Visit MyStore HomePage [90m# features/LandingPage.feature:4[0m
+    [32mGiven [0m[32mI go to Mystore site[0m       [90m# HomePage_StepDef.i_go_to_Mystore_site()[0m
 
-  Scenario: Go back go home page       [90m# features/LoginLogout.feature:9[0m
-    [32mGiven [0m[32mI go to site[0m                 [90m# LoginLogout_StepDef.i_go_to_site()[0m
-    [32mAnd [0m[32mI login[0m                        [90m# LoginLogout_StepDef.i_login()[0m
-    [32mAnd [0m[32mI should logout[0m                [90m# LoginLogout_StepDef.i_should_logout()[0m
+  Scenario: Verify My Store landing Page               [90m# features/LandingPage.feature:7[0m
+    [32mThen [0m[32mI should get Your Logo a new experience image[0m [90m# HomePage_StepDef.i_should_get_Your_Logo_a_new_experience_image()[0m
+
+  Background: Visit MyStore HomePage [90m# features/LandingPage.feature:4[0m
+    [32mGiven [0m[32mI go to Mystore site[0m       [90m# HomePage_StepDef.i_go_to_Mystore_site()[0m
+
+  Scenario: New user sign Up                                     [90m# features/LandingPage.feature:10[0m
+    [32mAnd [0m[32mI click on Sign Up[0m                                       [90m# SignUp_StepDef.i_click_on_Sign_Up()[0m
+    [32mAnd [0m[32mI enter my email address under create an account section[0m [90m# SignUp_StepDef.i_enter_my_email_address_under_create_an_account_section()[0m
+    [32mWhen [0m[32mI Click on "[0m[32m[1mCreate an account[0m[32m"[0m                          [90m# SignUp_StepDef.i_Click_on(String)[0m
+    [32mThen [0m[32mI should be presented with Create an account form[0m       [90m# SignUp_StepDef.i_should_be_presented_with_Create_an_account_form()[0m
+
+  Background: Visit MyStore HomePage [90m# features/LandingPage.feature:4[0m
+    [32mGiven [0m[32mI go to Mystore site[0m       [90m# HomePage_StepDef.i_go_to_Mystore_site()[0m
+
+  Scenario: Go back go home page       [90m# features/LandingPage.feature:16[0m
     [32mWhen [0m[32mI click on Logo[0m               [90m# HomePage_StepDef.i_click_on_Logo()[0m
     [32mThen [0m[32mI should get "[0m[32m[1mMy Store[0m[32m" title[0m [90m# HomePage_StepDef.i_should_get_title(String)[0m
+@wip
+Feature: I should be able to login and log out from site
+[34mCurrent Page URL is http://automationpractice.com/index.php?controller=authentication[0m
+
+  Scenario: Login and Login [90m# features/LoginLogout.feature:5[0m
+    [32mGiven [0m[32mI go to site[0m      [90m# LoginLogout_StepDef.i_go_to_site()[0m
+    [32mWhen [0m[32mI login[0m            [90m# LoginLogout_StepDef.i_login()[0m
+    [31mThen [0m[31mI should logout[0m    [90m# LoginLogout_StepDef.i_should_logout()[0m
+      [31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//a[@class='logout']"}
+        (Session info: chrome=61.0.3163.100)
+        (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+      Command duration or timeout: 20.06 seconds
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+      System info: host: 'cc-syadav-lap', ip: '129.31.207.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\syadav12\AppData\Local\Temp\scoped_dir21384_23812}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+      Session ID: 814e4fe3e6db4e2fc64b1a2311573fc5
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+      	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+      	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+      	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+      	at com.sun.proxy.$Proxy16.click(Unknown Source)
+      	at modules.LogoutAction.Execute(LogoutAction.java:9)
+      	at step_definitions.LoginLogout_StepDef.i_should_logout(LoginLogout_StepDef.java:44)
+      	at ✽.Then I should logout(features/LoginLogout.feature:8)
+      [0m
+[34mCurrent Page URL is http://automationpractice.com/index.php?controller=authentication[0m
+
+  Scenario: Go back go home page       [90m# features/LoginLogout.feature:10[0m
+    [32mGiven [0m[32mI go to site[0m                 [90m# LoginLogout_StepDef.i_go_to_site()[0m
+    [32mAnd [0m[32mI login[0m                        [90m# LoginLogout_StepDef.i_login()[0m
+    [31mAnd [0m[31mI should logout[0m                [90m# LoginLogout_StepDef.i_should_logout()[0m
+      [31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//a[@class='logout']"}
+        (Session info: chrome=61.0.3163.100)
+        (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+      Command duration or timeout: 20.06 seconds
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+      System info: host: 'cc-syadav-lap', ip: '129.31.207.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\syadav12\AppData\Local\Temp\scoped_dir20892_2418}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+      Session ID: e1b8f97b2bbf9549d3920bbb705b9c66
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+      	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+      	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+      	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:37)
+      	at com.sun.proxy.$Proxy16.click(Unknown Source)
+      	at modules.LogoutAction.Execute(LogoutAction.java:9)
+      	at step_definitions.LoginLogout_StepDef.i_should_logout(LoginLogout_StepDef.java:44)
+      	at ✽.And I should logout(features/LoginLogout.feature:13)
+      [0m
+    [36mWhen [0m[36mI click on Logo[0m               [90m# HomePage_StepDef.i_click_on_Logo()[0m
+    [36mThen [0m[36mI should get "[0m[36m[1mMy Store[0m[36m" title[0m [90m# HomePage_StepDef.i_should_get_title(String)[0m

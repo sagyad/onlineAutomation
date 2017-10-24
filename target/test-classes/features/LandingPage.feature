@@ -1,4 +1,4 @@
-@suite
+@wip
 Feature: Verify MyStore Home page and return back to home page by clicking on Logo.
 
   Background: Visit MyStore HomePage

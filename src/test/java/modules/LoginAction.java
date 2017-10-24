@@ -7,7 +7,7 @@ public class LoginAction {
 
    public static void Execute(WebDriver driver){
       SignUpPage.sign_in_link.click();
-      SignUpPage.inputLoginEmail.sendKeys("student1@mailinator.com");
+      SignUpPage.inputLoginEmail.sendKeys("student@mailinator.com");
       SignUpPage.inputPasswrd.sendKeys("test123");
       SignUpPage.clickOnSignInButton.click();
    }

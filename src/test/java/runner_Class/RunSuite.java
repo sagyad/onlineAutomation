@@ -1,6 +1,7 @@
 package runner_Class;
 
 import cucumber.api.CucumberOptions;
+import cucumber.api.SnippetType;
 import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 
@@ -8,8 +9,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "classpath:features",
         glue = {"step_definitions"},
+        snippets = SnippetType.UNDERSCORE,
 //        monochrome = true,
-        plugin = {"pretty","html:target/cucumber-html-report"},
+        plugin = {"pretty:STDOUT","html:Reports/cucumber-pretty"},
         tags = {"@suite","~@wip"}
 
 )
