@@ -32,19 +32,11 @@ public class LoginLogout_StepDef {
     @When("^I login$")
     public void i_login() throws Throwable {
         LoginAction.Execute(driver);
-
-
-        Reporter.addScreenCaptureFromPath("Reports\\cucumber-extent\\report.html","i_login.jpg");
-
-//        Reporter.addScreenCaptureFromPath("i_login.jpg");
-        Utility.captureScreenShot(driver, "i_login");
     }
 
     @Then("^I should logout$")
     public void i_should_logout() throws Throwable {
         LogoutAction.Execute(driver);
-        Reporter.addScreenCaptureFromPath("i_logout.jpg ","I_should_Logout");
-        Utility.captureScreenShot(driver,"i_should_logout");
     }
 
 }

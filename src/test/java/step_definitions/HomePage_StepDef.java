@@ -1,5 +1,6 @@
 package step_definitions;
 
+import com.aventstack.extentreports.gherkin.model.Scenario;
 import com.google.common.base.Verify;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;

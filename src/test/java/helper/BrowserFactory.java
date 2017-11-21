@@ -30,7 +30,7 @@ public class BrowserFactory {
         }
         driver.manage().timeouts().implicitlyWait(Constants.IMPLICIT_TIMEOUT_SECONDS, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(Constants.PAGELOAD_TIMEOUT_SECONDS,TimeUnit.SECONDS);
-        driver.manage().window().maximize();
+//        driver.manage().window().maximize();
 
         return driver;
     }

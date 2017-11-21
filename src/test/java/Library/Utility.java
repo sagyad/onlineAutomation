@@ -18,16 +18,4 @@ public class Utility {
             e.printStackTrace();
         }
     }
-
-
-    public static String captureSS(WebDriver driver, String screenShotName) {
-        try {
-            TakesScreenshot ts = (TakesScreenshot) driver;
-            File source = ts.getScreenshotAs(OutputType.FILE);
-            FileUtils.copyFile(source, new File("./ScreenShots/" + screenShotName + "test.png"));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return screenShotName;
-    }
 }

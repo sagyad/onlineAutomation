@@ -1,15 +1,15 @@
 package step_definitions;
 
 
-import Library.Utility;
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
 import com.cucumber.listener.Reporter;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
 import cucumber.api.Scenario;
 import cucumber.api.java.Before;
 import cucumber.api.java.After;
+import gherkin.formatter.model.Result;
 import helper.BrowserFactory;
-
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -18,9 +18,13 @@ import org.openqa.selenium.WebDriverException;
 import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class Hooks {
 
+    ExtentReports extentReports;
+    ExtentTest extentTest;
     public static WebDriver driver;
 
     @Before
@@ -29,20 +33,17 @@ public class Hooks {
     * shared state between tests
     */
     public void openBrowser() throws MalformedURLException {
-        System.out.println("Before - opening new browser");
-        System.out.println("Called openBrowser");
+//        System.out.println("Before - opening new browser");
+//        System.out.println("Called openBrowser");
         driver = BrowserFactory.getBrowser("Chrome");
         driver.manage().deleteAllCookies();
     }
 
     @After
-    /*
-    * Embed a screenshot in test report if test is marked as failed
-    */
-    public void embedScreenShot(Scenario scenario)throws IOException {
+    public void embedScreenShot(Scenario scenario) throws IOException {
         if (scenario.isFailed()) {
             try {
-                scenario.write("Current Page URL is " + driver.getCurrentUrl());
+//                scenario.write("Current Page URL is " + driver.getCurrentUrl());
                 byte[] screenShot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
                 scenario.embed(screenShot, "image/png");
             } catch (WebDriverException somePlantformDontSupportScreenShots) {
@@ -51,6 +52,6 @@ public class Hooks {
         }
         driver.close();
         driver.quit();
-            System.out.println("After Hook");
+        System.out.println("After Hook");
     }
 }
